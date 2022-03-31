@@ -856,3 +856,101 @@
                     background-size: cover;
                 }
             }
+            
+            .iframe {
+                display: flex;
+                position: absolute;
+                z-index: 3;
+                left: 900px;
+                top: 500px;
+                border-radius: 25%;
+                transition: all 2s;
+            }
+            
+            .iframe:hover {
+                width: 400px;
+                height: 260px;
+            }
+            
+            .iframe2 {
+                display: flex;
+                position: absolute;
+                z-index: 3;
+                left: 900px;
+                top: 1100px;
+                border-radius: 25%;
+                transition: all 2s;
+            }
+            
+            .iframe2:hover {
+                width: 400px;
+                height: 260px;
+            }
+            
+            .divp1 {
+                width: 380px;
+                height: 210px;
+                z-index: 3;
+                position: absolute;
+                display: flex;
+                left: 100px;
+                top: 600px;
+                border-radius: 25%;
+                animation-name: as;
+                animation-duration: 9s;
+                animation-iteration-count: infinite;
+                animation-timing-function: step-start;
+            }
+            
+            .divp2 {
+                width: 380px;
+                height: 210px;
+                z-index: 3;
+                position: absolute;
+                display: flex;
+                left: 900px;
+                top: 1400px;
+                border-radius: 25%;
+                animation-name: batman;
+                animation-duration: 9s;
+                animation-iteration-count: infinite;
+                animation-timing-function: step-start;
+            }
+            
+            @keyframes as {
+                0% {
+                    background-image: url(imagenes/as1.jpeg);
+                    background-size: cover;
+                }
+                36% {
+                    background-image: url(imagenes/as2.jpeg);
+                    background-size: cover;
+                }
+                72% {
+                    background-image: url(imagenes/as3.jpeg);
+                    background-size: cover;
+                }
+                100% {
+                    background-image: url(imagenes/as1.jpeg);
+                    background-size: cover;
+                }
+            }
+            
+            @keyframes batman {
+                0% {
+                    background-image: url(imagenes/bt1.jpg);
+                    background-size: cover;
+                }
+                36% {
+                    background-image: url(imagenes/bt2.jpg);
+                    background-size: cover;
+                }
+                72% {
+                    background-image: url(imagenes/bt3.jpg);
+                    background-size: cover;
+                }
+                100% {
+                    background-image: url(imagenes/bt1.jpg);
+                    background-size: cover;
+                }
+            }
