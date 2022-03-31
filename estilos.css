@@ -535,6 +535,54 @@
                 background-color: white;
             }
             
+            .iframe {
+                display: flex;
+                position: absolute;
+                z-index: 3;
+                left: 900px;
+                top: 500px;
+                border-radius: 25%;
+            }
+            
+            .iframe2 {
+                display: flex;
+                position: absolute;
+                z-index: 3;
+                left: 900px;
+                top: 1100px;
+                border-radius: 25%;
+            }
+            
+            .divp1 {
+                width: 380px;
+                height: 210px;
+                z-index: 3;
+                position: absolute;
+                display: flex;
+                left: 100px;
+                top: 600px;
+                border-radius: 25%;
+                animation-name: as;
+                animation-duration: 9s;
+                animation-iteration-count: infinite;
+                animation-timing-function: step-start;
+            }
+            
+            .divp2 {
+                width: 380px;
+                height: 210px;
+                z-index: 3;
+                position: absolute;
+                display: flex;
+                left: 900px;
+                top: 1400px;
+                border-radius: 25%;
+                animation-name: batman;
+                animation-duration: 9s;
+                animation-iteration-count: infinite;
+                animation-timing-function: step-start;
+            }
+            
             @media screen and (max-width:1200px) {
                 .bus {
                     top: 20px;
@@ -548,6 +596,30 @@
                     left: 500px;
                     height: 300px;
                     width: 400px;
+                }
+                .iframe {
+                    width: 300px;
+                    height: 210px;
+                    left: 700px;
+                    top: 500px;
+                }
+                .iframe2 {
+                    width: 300px;
+                    height: 210px;
+                    left: 700px;
+                    top: 1000px;
+                }
+                .divp1 {
+                    width: 310px;
+                    height: 210px;
+                    left: 20px;
+                    top: 500px;
+                }
+                .divp2 {
+                    width: 310px;
+                    height: 210px;
+                    left: 700px;
+                    top: 1300px;
                 }
             }
             
@@ -653,6 +725,30 @@
                     width: 80px;
                     margin: 15px;
                     padding: 3px;
+                }
+                .iframe {
+                    width: 240px;
+                    height: 170px;
+                    left: 500px;
+                    top: 500px;
+                }
+                .iframe2 {
+                    width: 240px;
+                    height: 170px;
+                    left: 500px;
+                    top: 900px;
+                }
+                .divp1 {
+                    width: 240px;
+                    height: 170px;
+                    left: 20px;
+                    top: 500px;
+                }
+                .divp2 {
+                    width: 240px;
+                    height: 170px;
+                    left: 500px;
+                    top: 1200px;
                 }
             }
             
@@ -775,6 +871,24 @@
                     margin: 15px;
                     padding: 3px;
                 }
+                .iframe {
+                    display: none;
+                }
+                .iframe2 {
+                    display: none;
+                }
+                .divp1 {
+                    width: 200px;
+                    height: 120px;
+                    left: 110px;
+                    top: 420px;
+                }
+                .divp2 {
+                    width: 200px;
+                    height: 120px;
+                    left: 200px;
+                    top: 800px;
+                }
             }
             
             .invisible {
@@ -855,66 +969,6 @@
                     background-image: url(imagenes/unc.jpeg);
                     background-size: cover;
                 }
-            }
-            
-            .iframe {
-                display: flex;
-                position: absolute;
-                z-index: 3;
-                left: 900px;
-                top: 500px;
-                border-radius: 25%;
-                transition: all 2s;
-            }
-            
-            .iframe:hover {
-                width: 400px;
-                height: 260px;
-            }
-            
-            .iframe2 {
-                display: flex;
-                position: absolute;
-                z-index: 3;
-                left: 900px;
-                top: 1100px;
-                border-radius: 25%;
-                transition: all 2s;
-            }
-            
-            .iframe2:hover {
-                width: 400px;
-                height: 260px;
-            }
-            
-            .divp1 {
-                width: 380px;
-                height: 210px;
-                z-index: 3;
-                position: absolute;
-                display: flex;
-                left: 100px;
-                top: 600px;
-                border-radius: 25%;
-                animation-name: as;
-                animation-duration: 9s;
-                animation-iteration-count: infinite;
-                animation-timing-function: step-start;
-            }
-            
-            .divp2 {
-                width: 380px;
-                height: 210px;
-                z-index: 3;
-                position: absolute;
-                display: flex;
-                left: 900px;
-                top: 1400px;
-                border-radius: 25%;
-                animation-name: batman;
-                animation-duration: 9s;
-                animation-iteration-count: infinite;
-                animation-timing-function: step-start;
             }
             
             @keyframes as {
