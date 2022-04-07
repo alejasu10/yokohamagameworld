@@ -176,6 +176,11 @@
                 width: 90px;
                 margin: 10px;
                 padding: 5px;
+                opacity: 50%;
+            }
+            
+            .final li:hover {
+                opacity: 100%;
             }
             
             .gridinicio {
@@ -202,9 +207,16 @@
                 left: 700px;
                 height: 300px;
                 width: 400px;
-                text-align: justify;
+                text-align: center;
                 z-index: 2;
                 color: white;
+                font-size: 3rem;
+                font-style: italic;
+            }
+            
+            .imagen_imagen1 p:hover {
+                color: black;
+                font-size: 4rem;
             }
             
             .imagen_imagen2 {
@@ -514,7 +526,7 @@
                 display: inline-flex;
                 height: 100px;
                 width: 110px;
-                margin: 20px;
+                margin: 10px;
                 padding: 5px;
             }
             
