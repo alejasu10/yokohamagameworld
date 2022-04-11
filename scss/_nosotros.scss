@@ -1,0 +1,58 @@
+/*Quienes Somos*/
+
+.quienes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 0px;
+    grid-template-areas: "logo logo nosotros nosotros" "logo logo nosotros nosotros" "nosotros2 nosotros2 logo2 logo2" "nosotros2 nosotros2 logo2 logo2"
+}
+
+.quienlogo {
+    grid-area: logo;
+    display: flex;
+    object-fit: cover;
+    justify-self: center;
+    img {
+        height: 400px;
+        width: 2560px;
+    }
+}
+
+.nosotros {
+    grid-area: nosotros;
+    display: flex;
+    object-fit: cover;
+    background-color: white;
+    align-items: center;
+    p {
+        font-size: 2rem;
+        font-weight: bold;
+        color: black;
+        text-align: center;
+    }
+}
+
+.quienlogo2 {
+    grid-area: logo2;
+    display: flex;
+    object-fit: cover;
+    img {
+        height: 400px;
+        width: 2560px;
+    }
+}
+
+.nosotros2 {
+    grid-area: nosotros2;
+    display: flex;
+    object-fit: cover;
+    background-color: white;
+    align-items: center;
+    p {
+        font-size: 2rem;
+        font-weight: bold;
+        color: black;
+        text-align: center;
+    }
+}

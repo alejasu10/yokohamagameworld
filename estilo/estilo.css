@@ -1,0 +1,632 @@
+/* general*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.bodyA {
+  overflow-x: hidden;
+  background-color: black; }
+
+html {
+  font-size: 62.5%; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style-type: none; }
+
+ol {
+  list-style-type: none; }
+
+/* navegacion y header*/
+.encabezado {
+  background-color: #001219;
+  position: sticky;
+  top: 0px;
+  z-index: 10; }
+  .encabezado img {
+    display: flex;
+    position: relative;
+    padding: 5px;
+    top: 0px; }
+
+.navegacion {
+  background-color: #9b2226;
+  height: 40px;
+  position: relative;
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  text-align: right; }
+  .navegacion a {
+    color: black; }
+  .navegacion li {
+    display: inline-flex;
+    padding: 5px;
+    margin: 5px;
+    margin-right: 50px; }
+
+img {
+  max-width: 100%;
+  max-height: 100%; }
+
+.imagenheader {
+  width: 5%;
+  height: 5%; }
+
+main {
+  z-index: 1; }
+
+.bus {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  left: 70%; }
+  .bus input {
+    text-align: center;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 25px;
+    border: none;
+    height: 25px;
+    width: 300px; }
+
+.letra {
+  font-size: 1.8rem; }
+
+/*inicio*/
+.letraBlanca {
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2rem;
+  line-height: 1.6 rem; }
+
+.gridinicio {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  grid-gap: 5px;
+  grid-template-areas: "imagen1 imagen1 imagen1 imagen1 imagen1 imagen1 imagen1 imagen1" "imagen1 imagen1 imagen1 imagen1 imagen1 imagen1 imagen1 imagen1" "imagen1 imagen1 imagen1 imagen1 imagen1 imagen1 imagen1 imagen1" "imagen2 imagen2 imagen3 imagen3 imagen3 imagen4 imagen4 imagen4" "imagen2 imagen2 imagen3 imagen3 imagen3 imagen4 imagen4 imagen4" "imagen2 imagen2 imagen3 imagen3 imagen3 imagen4 imagen4 imagen4" "imagen2 imagen2 imagen5 imagen5 imagen5 imagen6 imagen6 imagen6" "imagen2 imagen2 imagen5 imagen5 imagen5 imagen6 imagen6 imagen6" "imagen2 imagen2 imagen5 imagen5 imagen5 imagen6 imagen6 imagen6"; }
+
+.imagen_imagen1 {
+  grid-area: imagen1;
+  display: flex; }
+  .imagen_imagen1 img {
+    height: 400px;
+    width: 1300; }
+  .imagen_imagen1 p {
+    position: absolute;
+    align-self: center;
+    left: 700px;
+    height: 300px;
+    width: 400px;
+    text-align: center;
+    z-index: 2;
+    color: white;
+    font-size: 3rem;
+    font-style: italic; }
+    .imagen_imagen1 p:hover {
+      color: black;
+      font-size: 4rem; }
+
+.imagen_imagen2 {
+  grid-area: imagen2;
+  display: flex; }
+  .imagen_imagen2 img {
+    height: 820px;
+    width: 500px;
+    filter: grayscale(100%); }
+    .imagen_imagen2 img:hover {
+      filter: none; }
+
+.imagen_Main3 {
+  grid-area: imagen3;
+  display: flex;
+  animation-name: mirror;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: step-start; }
+  .imagen_Main3 img {
+    height: 407px;
+    width: 537px; }
+
+.imagen_Main4 {
+  grid-area: imagen4;
+  display: flex;
+  animation-name: fifa;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: step-start; }
+  .imagen_Main4 img {
+    height: 407px;
+    width: 537px; }
+
+.imagen_Main5 {
+  grid-area: imagen5;
+  display: flex;
+  animation-name: nfs;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: step-start; }
+  .imagen_Main5 img {
+    height: 407px;
+    width: 537px; }
+
+.imagen_Main6 {
+  grid-area: imagen6;
+  display: flex;
+  animation-name: unc;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: step-start; }
+  .imagen_Main6 img {
+    height: 407px;
+    width: 537px; }
+
+.invisible {
+  filter: opacity(0%); }
+
+@keyframes fifa {
+  0% {
+    background-image: url(../imagenes/fifa.jpeg);
+    background-size: cover; }
+  36% {
+    background-image: url(../imagenes/fifa2.jpg);
+    background-size: cover; }
+  72% {
+    background-image: url(../imagenes/fifa3.jpg);
+    background-size: cover; }
+  100% {
+    background-image: url(../imagenes/fifa.jpeg);
+    background-size: cover; } }
+
+@keyframes mirror {
+  0% {
+    background-image: url(../imagenes/mirror.jpg);
+    background-size: cover; }
+  36% {
+    background-image: url(../imagenes/mirror2.jpg);
+    background-size: cover; }
+  72% {
+    background-image: url(../imagenes/mirror3.jpg);
+    background-size: cover; }
+  100% {
+    background-image: url(../imagenes/mirror.jpg);
+    background-size: cover; } }
+
+@keyframes nfs {
+  0% {
+    background-image: url(../imagenes/nfs.jpg);
+    background-size: cover; }
+  36% {
+    background-image: url(../imagenes/nfs2.jpg);
+    background-size: cover; }
+  72% {
+    background-image: url(../imagenes/nfs3.jpg);
+    background-size: cover; }
+  100% {
+    background-image: url(../imagenes/nfs.jpg);
+    background-size: cover; } }
+
+@keyframes unc {
+  0% {
+    background-image: url(../imagenes/unc.jpeg);
+    background-size: cover; }
+  36% {
+    background-image: url(../imagenes/unc2.jpeg);
+    background-size: cover; }
+  72% {
+    background-image: url(../imagenes/unc3.jpeg);
+    background-size: cover; }
+  100% {
+    background-image: url(../imagenes/unc.jpeg);
+    background-size: cover; } }
+
+/*Contactos*/
+.contacto {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 0px;
+  grid-template-areas: "atencion atencion atencion atencion atencion" "atencion atencion atencion atencion atencion" "forma forma forma forma forma" "forma forma forma forma forma"; }
+
+.atencion {
+  grid-area: atencion;
+  display: flex;
+  object-fit: cover; }
+  .atencion img {
+    height: 600px;
+    width: 2560px; }
+
+.contactologo {
+  grid-area: atencion;
+  position: relative;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  z-index: 2; }
+
+.forma {
+  grid-area: forma;
+  display: flex;
+  object-fit: cover;
+  justify-self: center;
+  align-self: center;
+  color: white;
+  font-size: 3rem; }
+
+/*top #3*/
+.gridvendido {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  grid-gap: 0px;
+  grid-template-areas: "numero1 numero1 numero1 numero1 numero1 numero1 numero1 numero1" "numero1 numero1 numero1 numero1 numero1 numero1 numero1 numero1" "numero1 numero1 numero1 numero1 numero1 numero1 numero1 numero1" "parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1" "parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1" "numero2 numero2 numero2 numero2 numero2 numero2 numero2 numero2" "numero2 numero2 numero2 numero2 numero2 numero2 numero2 numero2" "numero2 numero2 numero2 numero2 numero2 numero2 numero2 numero2" "parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2" "parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2" "numero3 numero3 numero3 numero3 numero3 numero3 numero3 numero3" "numero3 numero3 numero3 numero3 numero3 numero3 numero3 numero3" "numero3 numero3 numero3 numero3 numero3 numero3 numero3 numero3" "parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3" "parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3"; }
+
+.vendido1 {
+  grid-area: numero1;
+  display: flex;
+  object-fit: cover; }
+  .vendido1 img {
+    height: 600px;
+    width: 2560px; }
+
+.parrafo1v {
+  grid-area: parrafo1;
+  display: flex;
+  object-fit: cover;
+  background-color: white;
+  align-items: center; }
+  .parrafo1v p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    text-align: center; }
+
+.vendido2 {
+  grid-area: numero2;
+  display: flex;
+  object-fit: cover; }
+  .vendido2 img {
+    height: 600px;
+    width: 2560px; }
+
+.parrafo2v {
+  grid-area: parrafo2;
+  display: flex;
+  object-fit: cover;
+  background-color: white;
+  align-items: center; }
+  .parrafo2v p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    text-align: center; }
+
+.vendido3 {
+  grid-area: numero3;
+  display: flex;
+  object-fit: cover; }
+  .vendido3 img {
+    height: 600px;
+    width: 2560px; }
+
+.parrafo3v {
+  grid-area: parrafo3;
+  display: flex;
+  object-fit: cover;
+  background-color: white;
+  align-items: center; }
+  .parrafo3v p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    text-align: center; }
+
+/*Tienda*/
+.tienda {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+  grid-gap: 0px;
+  grid-template-areas: "portada portada portada portada portada portada portada portada portada portada" "portada portada portada portada portada portada portada portada portada portada" "portada portada portada portada portada portada portada portada portada portada" "portada portada portada portada portada portada portada portada portada portada" "portada portada portada portada portada portada portada portada portada portada" "barner barner barner barner barner barner barner barner barner barner" "portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2" "portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2" "portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2" "portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2" "portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2"; }
+
+.portada {
+  grid-area: portada;
+  display: flex;
+  object-fit: cover; }
+  .portada img {
+    height: auto;
+    width: 2560px; }
+
+.barner {
+  grid-area: barner;
+  display: flex;
+  justify-content: center;
+  background-color: gray; }
+  .barner ul {
+    position: relative; }
+  .barner li {
+    display: inline-flex;
+    height: 100px;
+    width: 110px;
+    margin: 10px;
+    padding: 5px; }
+
+.portada2 {
+  grid-area: portada2;
+  display: flex;
+  object-fit: cover; }
+  .portada2 img {
+    height: auto;
+    width: 2560px; }
+
+.blanco {
+  width: auto;
+  height: auto;
+  background-color: white; }
+
+/*Quienes Somos*/
+.quienes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 0px;
+  grid-template-areas: "logo logo nosotros nosotros" "logo logo nosotros nosotros" "nosotros2 nosotros2 logo2 logo2" "nosotros2 nosotros2 logo2 logo2"; }
+
+.quienlogo {
+  grid-area: logo;
+  display: flex;
+  object-fit: cover;
+  justify-self: center; }
+  .quienlogo img {
+    height: 400px;
+    width: 2560px; }
+
+.nosotros {
+  grid-area: nosotros;
+  display: flex;
+  object-fit: cover;
+  background-color: white;
+  align-items: center; }
+  .nosotros p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    text-align: center; }
+
+.quienlogo2 {
+  grid-area: logo2;
+  display: flex;
+  object-fit: cover; }
+  .quienlogo2 img {
+    height: 400px;
+    width: 2560px; }
+
+.nosotros2 {
+  grid-area: nosotros2;
+  display: flex;
+  object-fit: cover;
+  background-color: white;
+  align-items: center; }
+  .nosotros2 p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    text-align: center; }
+
+/*Footer*/
+.final {
+  background-color: #001219; }
+  .final p {
+    font-size: 200%;
+    font-weight: bold;
+    font-style: italic;
+    color: white; }
+  .final ul {
+    position: relative;
+    text-align: right; }
+  .final li {
+    display: inline-flex;
+    height: 100px;
+    width: 90px;
+    margin: 10px;
+    padding: 5px;
+    opacity: 50%; }
+    .final li:hover {
+      opacity: 100%; }
+
+/*Media Q*/
+@media screen and (max-width: 1200px) {
+  .bus {
+    top: 20px;
+    left: 70%; }
+  .bus input {
+    height: 20px;
+    width: 200px; }
+  .imagen_imagen1 p {
+    left: 500px;
+    height: 300px;
+    width: 400px; } }
+
+@media screen and (max-width: 785px) {
+  .bus {
+    top: 10px;
+    left: 65%; }
+  .bus input {
+    height: 20px;
+    width: 200px; }
+  .imagen_imagen1 p {
+    top: 100px;
+    left: 300px;
+    height: 200px;
+    width: 300px;
+    font-size: 1.5rem; }
+  .imagen_imagen1 img {
+    height: 250px;
+    width: 768; }
+  .imagen_imagen2 img {
+    height: 505px;
+    width: 270px; }
+  .imagen_Main3 img {
+    height: 250px;
+    width: 285px; }
+  .imagen_Main4 img {
+    height: 250px;
+    width: 285px; }
+  .imagen_Main5 img {
+    height: 250px;
+    width: 285px; }
+  .imagen_Main6 img {
+    height: 250px;
+    width: 285px; }
+  .final p {
+    font-size: 1.5rem; }
+  .final li {
+    height: 80px;
+    width: 70px; }
+  .vendido1 img {
+    height: 580px;
+    width: 768px; }
+  .vendido2 img {
+    height: 580px;
+    width: 768px; }
+  .vendido3 img {
+    height: 580px;
+    width: 768px; }
+  .parrafo1v p {
+    font-size: 1.5rem; }
+  .parrafo2v p {
+    font-size: 1.5rem; }
+  .parrafo3v p {
+    font-size: 1.5rem; }
+  .atencion img {
+    height: 400px;
+    width: 1200px; }
+  .forma {
+    font-size: 2rem; }
+  .quienlogo img {
+    height: 200px;
+    width: 384px; }
+  .quienlogo2 img {
+    height: 200px;
+    width: 384px; }
+  .nosotros p {
+    font-size: 1.5rem; }
+  .nosotros2 p {
+    font-size: 1.5rem; }
+  .portada img {
+    height: 600px;
+    width: 768px; }
+  .portada2 img {
+    height: 600px;
+    width: 768px; }
+  .barner li {
+    height: 70px;
+    width: 80px;
+    margin: 15px;
+    padding: 3px; } }
+
+@media screen and (max-width: 500px) {
+  .bus {
+    display: none; }
+  .imagen_imagen1 p {
+    display: none; }
+  .navegacion {
+    background-color: #9b2226;
+    height: 100px;
+    position: relative;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center; }
+    .navegacion li {
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+      margin: 5px;
+      margin-right: 20px; }
+  .encabezado img {
+    display: flex;
+    position: relative;
+    padding: 5px;
+    top: 0px;
+    left: 180px;
+    height: 60px;
+    width: 60px; }
+  .final p {
+    font-size: 1rem; }
+  .final li {
+    height: 60px;
+    width: 50px; }
+  .imagen_imagen1 img {
+    height: 190px;
+    width: 425px; }
+  .imagen_imagen2 img {
+    height: 385px;
+    width: 103px; }
+  .imagen_Main3 img {
+    height: 190px;
+    width: 220px; }
+  .imagen_Main4 img {
+    height: 190px;
+    width: 220px; }
+  .imagen_Main5 img {
+    height: 190px;
+    width: 220px; }
+  .imagen_Main6 img {
+    height: 190px;
+    width: 220px; }
+  .atencion img {
+    height: 300px;
+    width: 900px; }
+  .forma {
+    font-size: 1rem; }
+  .vendido1 img {
+    height: 380px;
+    width: 425px; }
+  .vendido2 img {
+    height: 380px;
+    width: 425px; }
+  .vendido3 img {
+    height: 380px;
+    width: 425px; }
+  .parrafo1v p {
+    font-size: 1rem; }
+  .parrafo2v p {
+    font-size: 1rem; }
+  .parrafo3v p {
+    font-size: 1rem; }
+  .quienlogo img {
+    height: 200px;
+    width: 284px; }
+  .quienlogo2 img {
+    height: 200px;
+    width: 284px; }
+  .nosotros p {
+    font-size: 1.2rem; }
+  .nosotros2 p {
+    font-size: 1.2rem; }
+  .portada img {
+    height: 400px;
+    width: 525px; }
+  .portada2 img {
+    height: 400px;
+    width: 525px; }
+  .barner li {
+    height: 50px;
+    width: 60px;
+    margin: 15px;
+    padding: 3px; }
+  .divp1 {
+    width: 200px;
+    height: 120px;
+    left: 110px;
+    top: 420px; }
+  .divp2 {
+    width: 200px;
+    height: 120px;
+    left: 200px;
+    top: 800px; } }

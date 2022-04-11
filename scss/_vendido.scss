@@ -1,0 +1,81 @@
+/*top #3*/
+
+.gridvendido {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    grid-gap: 0px;
+    grid-template-areas: "numero1 numero1 numero1 numero1 numero1 numero1 numero1 numero1" "numero1 numero1 numero1 numero1 numero1 numero1 numero1 numero1" "numero1 numero1 numero1 numero1 numero1 numero1 numero1 numero1" "parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1" "parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1" "numero2 numero2 numero2 numero2 numero2 numero2 numero2 numero2" "numero2 numero2 numero2 numero2 numero2 numero2 numero2 numero2" "numero2 numero2 numero2 numero2 numero2 numero2 numero2 numero2" "parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2" "parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2" "numero3 numero3 numero3 numero3 numero3 numero3 numero3 numero3" "numero3 numero3 numero3 numero3 numero3 numero3 numero3 numero3" "numero3 numero3 numero3 numero3 numero3 numero3 numero3 numero3" "parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3" "parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3"
+}
+
+.vendido1 {
+    grid-area: numero1;
+    display: flex;
+    object-fit: cover;
+    img {
+        height: 600px;
+        width: 2560px;
+    }
+}
+
+.parrafo1v {
+    grid-area: parrafo1;
+    display: flex;
+    object-fit: cover;
+    background-color: white;
+    align-items: center;
+    p {
+        font-size: 2rem;
+        font-weight: bold;
+        color: black;
+        text-align: center;
+    }
+}
+
+.vendido2 {
+    grid-area: numero2;
+    display: flex;
+    object-fit: cover;
+    img {
+        height: 600px;
+        width: 2560px;
+    }
+}
+
+.parrafo2v {
+    grid-area: parrafo2;
+    display: flex;
+    object-fit: cover;
+    background-color: white;
+    align-items: center;
+    p {
+        font-size: 2rem;
+        font-weight: bold;
+        color: black;
+        text-align: center;
+    }
+}
+
+.vendido3 {
+    grid-area: numero3;
+    display: flex;
+    object-fit: cover;
+    img {
+        height: 600px;
+        width: 2560px;
+    }
+}
+
+.parrafo3v {
+    grid-area: parrafo3;
+    display: flex;
+    object-fit: cover;
+    background-color: white;
+    align-items: center;
+    p {
+        font-size: 2rem;
+        font-weight: bold;
+        color: black;
+        text-align: center;
+    }
+}

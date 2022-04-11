@@ -1,0 +1,52 @@
+/*Tienda*/
+
+.tienda {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    grid-gap: 0px;
+    grid-template-areas: "portada portada portada portada portada portada portada portada portada portada" "portada portada portada portada portada portada portada portada portada portada" "portada portada portada portada portada portada portada portada portada portada" "portada portada portada portada portada portada portada portada portada portada" "portada portada portada portada portada portada portada portada portada portada" "barner barner barner barner barner barner barner barner barner barner" "portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2" "portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2" "portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2" "portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2" "portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2 portada2"
+}
+
+.portada {
+    grid-area: portada;
+    display: flex;
+    object-fit: cover;
+    img {
+        height: auto;
+        width: 2560px;
+    }
+}
+
+.barner {
+    grid-area: barner;
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    ul {
+        position: relative;
+    }
+    li {
+        display: inline-flex;
+        height: 100px;
+        width: 110px;
+        margin: 10px;
+        padding: 5px;
+    }
+}
+
+.portada2 {
+    grid-area: portada2;
+    display: flex;
+    object-fit: cover;
+    img {
+        height: auto;
+        width: 2560px;
+    }
+}
+
+.blanco {
+    width: auto;
+    height: auto;
+    background-color: white;
+}

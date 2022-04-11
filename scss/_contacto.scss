@@ -1,0 +1,38 @@
+/*Contactos*/
+
+.contacto {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 0px;
+    grid-template-areas: "atencion atencion atencion atencion atencion" "atencion atencion atencion atencion atencion" "forma forma forma forma forma" "forma forma forma forma forma"
+}
+
+.atencion {
+    grid-area: atencion;
+    display: flex;
+    object-fit: cover;
+    img {
+        height: 600px;
+        width: 2560px;
+    }
+}
+
+.contactologo {
+    grid-area: atencion;
+    position: relative;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    z-index: 2;
+}
+
+.forma {
+    grid-area: forma;
+    display: flex;
+    object-fit: cover;
+    justify-self: center;
+    align-self: center;
+    color: white;
+    font-size: 3rem;
+}
