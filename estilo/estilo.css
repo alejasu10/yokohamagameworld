@@ -77,6 +77,15 @@ main {
   font-size: 1.8rem; }
 
 /*inicio*/
+.imgAyL, .imagen_Main3 img, .imagen_Main4 img, .imagen_Main5 img, .imagen_Main6 img {
+  height: 407px;
+  width: 537px; }
+
+.imgmain, .imagen_Main3, .imagen_Main4, .imagen_Main5, .imagen_Main6 {
+  display: flex;
+  animation-iteration-count: infinite;
+  animation-timing-function: step-start; }
+
 .letraBlanca {
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -123,47 +132,23 @@ main {
 
 .imagen_Main3 {
   grid-area: imagen3;
-  display: flex;
   animation-name: mirror;
-  animation-duration: 9s;
-  animation-iteration-count: infinite;
-  animation-timing-function: step-start; }
-  .imagen_Main3 img {
-    height: 407px;
-    width: 537px; }
+  animation-duration: 9s; }
 
 .imagen_Main4 {
   grid-area: imagen4;
-  display: flex;
   animation-name: fifa;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
-  animation-timing-function: step-start; }
-  .imagen_Main4 img {
-    height: 407px;
-    width: 537px; }
+  animation-duration: 8s; }
 
 .imagen_Main5 {
   grid-area: imagen5;
-  display: flex;
   animation-name: nfs;
-  animation-duration: 7s;
-  animation-iteration-count: infinite;
-  animation-timing-function: step-start; }
-  .imagen_Main5 img {
-    height: 407px;
-    width: 537px; }
+  animation-duration: 7s; }
 
 .imagen_Main6 {
   grid-area: imagen6;
-  display: flex;
   animation-name: unc;
-  animation-duration: 9s;
-  animation-iteration-count: infinite;
-  animation-timing-function: step-start; }
-  .imagen_Main6 img {
-    height: 407px;
-    width: 537px; }
+  animation-duration: 9s; }
 
 .invisible {
   filter: opacity(0%); }
@@ -364,9 +349,11 @@ main {
     width: 2560px; }
 
 .blanco {
-  width: auto;
-  height: auto;
   background-color: white; }
+
+.color, .blanco {
+  height: auto;
+  width: auto; }
 
 /*Quienes Somos*/
 .quienes {

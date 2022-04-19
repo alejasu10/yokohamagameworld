@@ -1,5 +1,6 @@
 /*Tienda*/
 
+$mapa :( centro:center, displayy:flex, obje:cover, );
 .tienda {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -10,8 +11,9 @@
 
 .portada {
     grid-area: portada;
-    display: flex;
-    object-fit: cover;
+    display: map-get($mapa, displayy);
+    object-fit: map-get($mapa, obje);
+    ;
     img {
         height: auto;
         width: 2560px;
@@ -20,8 +22,8 @@
 
 .barner {
     grid-area: barner;
-    display: flex;
-    justify-content: center;
+    display: map-get($mapa, displayy);
+    justify-content: map-get($mapa, centro);
     background-color: gray;
     ul {
         position: relative;
@@ -37,8 +39,8 @@
 
 .portada2 {
     grid-area: portada2;
-    display: flex;
-    object-fit: cover;
+    display: map-get($mapa, displayy);
+    object-fit: map-get($mapa, obje);
     img {
         height: auto;
         width: 2560px;
@@ -46,7 +48,15 @@
 }
 
 .blanco {
-    width: auto;
-    height: auto;
+    @extend .color;
     background-color: white;
+}
+
+@mixin blan($alto, $largo) {
+    height: $alto;
+    width: $largo;
+}
+
+.color {
+    @include blan(auto, auto)
 }

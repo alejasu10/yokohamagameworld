@@ -1,5 +1,18 @@
 /*inicio*/
 
+$imgAlto: 407px;
+$imgAncho: 537px;
+.imgAyL {
+    height: $imgAlto;
+    width: $imgAncho;
+}
+
+.imgmain {
+    display: flex;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-start;
+}
+
 .letraBlanca {
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -54,54 +67,42 @@
 }
 
 .imagen_Main3 {
+    @extend .imgmain;
     grid-area: imagen3;
-    display: flex;
     animation-name: mirror;
     animation-duration: 9s;
-    animation-iteration-count: infinite;
-    animation-timing-function: step-start;
     img {
-        height: 407px;
-        width: 537px;
+        @extend .imgAyL;
     }
 }
 
 .imagen_Main4 {
+    @extend .imgmain;
     grid-area: imagen4;
-    display: flex;
     animation-name: fifa;
     animation-duration: 8s;
-    animation-iteration-count: infinite;
-    animation-timing-function: step-start;
     img {
-        height: 407px;
-        width: 537px;
+        @extend .imgAyL;
     }
 }
 
 .imagen_Main5 {
+    @extend .imgmain;
     grid-area: imagen5;
-    display: flex;
     animation-name: nfs;
     animation-duration: 7s;
-    animation-iteration-count: infinite;
-    animation-timing-function: step-start;
     img {
-        height: 407px;
-        width: 537px;
+        @extend .imgAyL;
     }
 }
 
 .imagen_Main6 {
+    @extend .imgmain;
     grid-area: imagen6;
-    display: flex;
     animation-name: unc;
     animation-duration: 9s;
-    animation-iteration-count: infinite;
-    animation-timing-function: step-start;
     img {
-        height: 407px;
-        width: 537px;
+        @extend .imgAyL;
     }
 }
 
