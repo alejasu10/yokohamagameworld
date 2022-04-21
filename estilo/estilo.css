@@ -355,6 +355,20 @@ main {
   height: auto;
   width: auto; }
 
+/*Juegos*/
+.j_org {
+  position: relative;
+  display: flex;
+  margin: 20px;
+  padding: 10px;
+  align-items: center;
+  justify-items: center; }
+
+.j_org2 {
+  margin: 20px;
+  height: 300px;
+  width: 400px; }
+
 /*Quienes Somos*/
 .quienes {
   display: grid;
@@ -405,25 +419,48 @@ main {
     text-align: center; }
 
 /*Footer*/
-.final {
+.final, .final2 {
   background-color: #001219; }
-  .final p {
-    font-size: 200%;
+  .final p, .final2 p {
+    font-size: 160%;
     font-weight: bold;
     font-style: italic;
     color: white; }
-  .final ul {
+
+.final2 ul {
+  position: relative;
+  text-align: right; }
+
+.final2 li {
+  display: inline-flex;
+  height: 70px;
+  width: 60px;
+  margin: 10px;
+  padding: 5px;
+  opacity: 50%; }
+  .final2 li:hover {
+    opacity: 100%; }
+
+.final3 {
+  position: relative;
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  .final3 p {
+    color: black;
+    font-size: 20px;
+    font-weight: bold; }
+  .final3 ul {
     position: relative;
-    text-align: right; }
-  .final li {
-    display: inline-flex;
-    height: 100px;
-    width: 90px;
-    margin: 10px;
-    padding: 5px;
-    opacity: 50%; }
-    .final li:hover {
-      opacity: 100%; }
+    font-size: 16px; }
+  .final3 li {
+    height: 40px;
+    width: 150px; }
+  .final3 li a {
+    color: white; }
+  .final3 li a:hover {
+    color: blue; }
 
 /*Media Q*/
 @media screen and (max-width: 1200px) {
@@ -469,9 +506,9 @@ main {
   .imagen_Main6 img {
     height: 250px;
     width: 285px; }
-  .final p {
+  .final p, .final2 p {
     font-size: 1.5rem; }
-  .final li {
+  .final li, .final2 li {
     height: 80px;
     width: 70px; }
   .vendido1 img {
@@ -514,7 +551,11 @@ main {
     height: 70px;
     width: 80px;
     margin: 15px;
-    padding: 3px; } }
+    padding: 3px; }
+  .j_org2 {
+    margin: 20px;
+    height: 200px;
+    width: 300px; } }
 
 @media screen and (max-width: 500px) {
   .bus {
@@ -543,9 +584,9 @@ main {
     left: 180px;
     height: 60px;
     width: 60px; }
-  .final p {
+  .final p, .final2 p {
     font-size: 1rem; }
-  .final li {
+  .final li, .final2 li {
     height: 60px;
     width: 50px; }
   .imagen_imagen1 img {
@@ -616,4 +657,22 @@ main {
     width: 200px;
     height: 120px;
     left: 200px;
-    top: 800px; } }
+    top: 800px; }
+  .j_org2 {
+    margin: 20px;
+    height: 70px;
+    width: 200px; }
+    .j_org2 h5 {
+      display: none; }
+    .j_org2 p {
+      display: none; }
+  .final3 {
+    margin: 10px;
+    padding: 10px; }
+    .final3 p {
+      font-size: 11px; }
+    .final3 ul {
+      font-size: 9px; }
+    .final3 li {
+      height: 30px;
+      width: 70px; } }
