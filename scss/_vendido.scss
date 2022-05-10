@@ -3,9 +3,9 @@
 .gridvendido {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(15, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     grid-gap: 0px;
-    grid-template-areas: "numero1 numero1 numero1 numero1 numero1 numero1 numero1 numero1" "numero1 numero1 numero1 numero1 numero1 numero1 numero1 numero1" "numero1 numero1 numero1 numero1 numero1 numero1 numero1 numero1" "parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1" "parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1" "numero2 numero2 numero2 numero2 numero2 numero2 numero2 numero2" "numero2 numero2 numero2 numero2 numero2 numero2 numero2 numero2" "numero2 numero2 numero2 numero2 numero2 numero2 numero2 numero2" "parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2" "parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2" "numero3 numero3 numero3 numero3 numero3 numero3 numero3 numero3" "numero3 numero3 numero3 numero3 numero3 numero3 numero3 numero3" "numero3 numero3 numero3 numero3 numero3 numero3 numero3 numero3" "parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3" "parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3"
+    grid-template-areas: "numero1 numero1 numero1 numero1 parrafo1 parrafo1 parrafo1 parrafo1" "numero1 numero1 numero1 numero1 parrafo1 parrafo1 parrafo1 parrafo1" "numero2 numero2 numero2 numero2 numero2 numero2 numero2 numero2" "numero2 numero2 numero2 numero2 numero2 numero2 numero2 numero2" "parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2" "parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2" "parrafo3 parrafo3 parrafo3 parrafo3 numero3 numero3 numero3 numero3" "parrafo3 parrafo3 parrafo3 parrafo3 numero3 numero3 numero3 numero3"
 }
 
 .vendido1 {
@@ -22,12 +22,12 @@
     grid-area: parrafo1;
     display: flex;
     object-fit: cover;
-    background-color: white;
+    background-color: #f1c0e8;
     align-items: center;
     p {
         font-size: 2rem;
         font-weight: bold;
-        color: black;
+        color: white;
         text-align: center;
     }
 }
@@ -46,7 +46,7 @@
     grid-area: parrafo2;
     display: flex;
     object-fit: cover;
-    background-color: white;
+    background-color: #6a040f;
     align-items: center;
     p {
         font-size: 2rem;
@@ -70,12 +70,12 @@
     grid-area: parrafo3;
     display: flex;
     object-fit: cover;
-    background-color: white;
+    background-color: #001219;
     align-items: center;
     p {
         font-size: 2rem;
         font-weight: bold;
-        color: black;
+        color: white;
         text-align: center;
     }
 }

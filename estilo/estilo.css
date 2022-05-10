@@ -20,9 +20,64 @@ ul {
 ol {
   list-style-type: none; }
 
+/*Portada */
+.port {
+  position: relative;
+  height: auto;
+  width: auto;
+  z-index: 1; }
+
+.port2 {
+  display: flex;
+  position: absolute;
+  width: auto;
+  height: auto;
+  z-index: 2;
+  left: 630px;
+  top: 200px; }
+
+.bprt {
+  position: absolute;
+  display: flex;
+  z-index: 3;
+  left: 480px;
+  top: 400px;
+  width: auto;
+  height: auto; }
+  .bprt ul {
+    background-color: black;
+    border-radius: 25px; }
+    .bprt ul li {
+      font-size: 32px;
+      font-weight: bold;
+      font-style: italic;
+      margin: 5px;
+      padding: 5px; }
+      .bprt ul li a {
+        text-decoration: none;
+        color: white;
+        text-align: center; }
+        .bprt ul li a:hover {
+          color: #e85d04; }
+
+.sp {
+  display: flex;
+  position: absolute;
+  left: 900px;
+  top: 550px;
+  height: 30px;
+  width: 30px;
+  z-index: 2; }
+
+.dp {
+  color: #e85d04;
+  font-size: 25px;
+  font-weight: bold; }
+
 /* navegacion y header*/
 .encabezado {
-  background-color: #001219;
+  /*background-color: #001219;*/
+  background-image: url(../imagenes/banneri.png);
   position: sticky;
   top: 0px;
   z-index: 10; }
@@ -240,15 +295,17 @@ main {
   justify-self: center;
   align-self: center;
   color: white;
-  font-size: 3rem; }
+  font-size: 3rem;
+  margin: 10px;
+  padding: 10px; }
 
 /*top #3*/
 .gridvendido {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(15, 1fr);
+  grid-template-rows: repeat(8, 1fr);
   grid-gap: 0px;
-  grid-template-areas: "numero1 numero1 numero1 numero1 numero1 numero1 numero1 numero1" "numero1 numero1 numero1 numero1 numero1 numero1 numero1 numero1" "numero1 numero1 numero1 numero1 numero1 numero1 numero1 numero1" "parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1" "parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1" "numero2 numero2 numero2 numero2 numero2 numero2 numero2 numero2" "numero2 numero2 numero2 numero2 numero2 numero2 numero2 numero2" "numero2 numero2 numero2 numero2 numero2 numero2 numero2 numero2" "parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2" "parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2" "numero3 numero3 numero3 numero3 numero3 numero3 numero3 numero3" "numero3 numero3 numero3 numero3 numero3 numero3 numero3 numero3" "numero3 numero3 numero3 numero3 numero3 numero3 numero3 numero3" "parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3" "parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3"; }
+  grid-template-areas: "numero1 numero1 numero1 numero1 parrafo1 parrafo1 parrafo1 parrafo1" "numero1 numero1 numero1 numero1 parrafo1 parrafo1 parrafo1 parrafo1" "numero2 numero2 numero2 numero2 numero2 numero2 numero2 numero2" "numero2 numero2 numero2 numero2 numero2 numero2 numero2 numero2" "parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2" "parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2 parrafo2" "parrafo3 parrafo3 parrafo3 parrafo3 numero3 numero3 numero3 numero3" "parrafo3 parrafo3 parrafo3 parrafo3 numero3 numero3 numero3 numero3"; }
 
 .vendido1 {
   grid-area: numero1;
@@ -262,12 +319,12 @@ main {
   grid-area: parrafo1;
   display: flex;
   object-fit: cover;
-  background-color: white;
+  background-color: #f1c0e8;
   align-items: center; }
   .parrafo1v p {
     font-size: 2rem;
     font-weight: bold;
-    color: black;
+    color: white;
     text-align: center; }
 
 .vendido2 {
@@ -282,7 +339,7 @@ main {
   grid-area: parrafo2;
   display: flex;
   object-fit: cover;
-  background-color: white;
+  background-color: #6a040f;
   align-items: center; }
   .parrafo2v p {
     font-size: 2rem;
@@ -302,12 +359,12 @@ main {
   grid-area: parrafo3;
   display: flex;
   object-fit: cover;
-  background-color: white;
+  background-color: #001219;
   align-items: center; }
   .parrafo3v p {
     font-size: 2rem;
     font-weight: bold;
-    color: black;
+    color: white;
     text-align: center; }
 
 /*Tienda*/
@@ -369,6 +426,10 @@ main {
   height: 300px;
   width: 400px; }
 
+.b_color {
+  background-color: black;
+  border-bottom: black; }
+
 /*Quienes Somos*/
 .quienes {
   display: grid;
@@ -395,7 +456,7 @@ main {
   .nosotros p {
     font-size: 2rem;
     font-weight: bold;
-    color: black;
+    color: #e85d04;
     text-align: center; }
 
 .quienlogo2 {
@@ -415,7 +476,7 @@ main {
   .nosotros2 p {
     font-size: 2rem;
     font-weight: bold;
-    color: black;
+    color: #480ca8;
     text-align: center; }
 
 /*Footer*/
@@ -476,6 +537,26 @@ main {
     width: 400px; } }
 
 @media screen and (max-width: 785px) {
+  .port {
+    height: auto;
+    width: 800px; }
+  .port2 {
+    left: 250px;
+    top: 170px; }
+  .bprt {
+    left: 350px;
+    top: 500px; }
+    .bprt ul li {
+      background-color: #9b2226;
+      border-radius: 25px;
+      font-size: 16px; }
+  .sp {
+    left: 400px;
+    top: 350px;
+    height: 30px;
+    width: 30px; }
+  .dp {
+    font-size: 13px; }
   .bus {
     top: 10px;
     left: 65%; }
@@ -558,6 +639,25 @@ main {
     width: 300px; } }
 
 @media screen and (max-width: 500px) {
+  .port {
+    width: 425px; }
+  .port2 {
+    left: 70px;
+    top: 100px; }
+  .bprt {
+    left: 160px;
+    top: 350px; }
+    .bprt ul li {
+      background-color: #9b2226;
+      border-radius: 25px;
+      font-size: 14px; }
+  .sp {
+    left: 200px;
+    top: 490px;
+    height: 30px;
+    width: 30px; }
+  .dp {
+    display: none; }
   .bus {
     display: none; }
   .imagen_imagen1 p {

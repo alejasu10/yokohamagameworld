@@ -1,285 +1,340 @@
-        /*Media Q*/
-        
-        @media screen and (max-width:1200px) {
-            .bus {
-                top: 20px;
-                left: 70%;
-            }
-            .bus input {
-                height: 20px;
-                width: 200px;
-            }
-            .imagen_imagen1 p {
-                left: 500px;
-                height: 300px;
-                width: 400px;
+    /*Media Q*/
+    
+    @media screen and (max-width:1200px) {
+        .bus {
+            top: 20px;
+            left: 70%;
+        }
+        .bus input {
+            height: 20px;
+            width: 200px;
+        }
+        .imagen_imagen1 p {
+            left: 500px;
+            height: 300px;
+            width: 400px;
+        }
+    }
+    
+    @media screen and (max-width:785px) {
+        .port {
+            height: auto;
+            width: 800px;
+        }
+        .port2 {
+            left: 250px;
+            top: 170px;
+        }
+        .bprt {
+            left: 350px;
+            top: 500px;
+            ul {
+                li {
+                    background-color: #9b2226;
+                    border-radius: 25px;
+                    font-size: 16px;
+                }
             }
         }
-        
-        @media screen and (max-width:785px) {
-            .bus {
-                top: 10px;
-                left: 65%;
+        .sp {
+            left: 400px;
+            top: 350px;
+            height: 30px;
+            width: 30px;
+        }
+        .dp {
+            font-size: 13px;
+        }
+        .bus {
+            top: 10px;
+            left: 65%;
+        }
+        .bus input {
+            height: 20px;
+            width: 200px;
+        }
+        .imagen_imagen1 p {
+            top: 100px;
+            left: 300px;
+            height: 200px;
+            width: 300px;
+            font-size: 1.5rem;
+        }
+        .imagen_imagen1 img {
+            height: 250px;
+            width: 768;
+        }
+        .imagen_imagen2 img {
+            height: 505px;
+            width: 270px;
+        }
+        .imagen_Main3 img {
+            height: 250px;
+            width: 285px;
+        }
+        .imagen_Main4 img {
+            height: 250px;
+            width: 285px;
+        }
+        .imagen_Main5 img {
+            height: 250px;
+            width: 285px;
+        }
+        .imagen_Main6 img {
+            height: 250px;
+            width: 285px;
+        }
+        .final p {
+            font-size: 1.5rem;
+        }
+        .final li {
+            height: 80px;
+            width: 70px;
+        }
+        .vendido1 img {
+            height: 580px;
+            width: 768px;
+        }
+        .vendido2 img {
+            height: 580px;
+            width: 768px;
+        }
+        .vendido3 img {
+            height: 580px;
+            width: 768px;
+        }
+        .parrafo1v p {
+            font-size: 1.5rem;
+        }
+        .parrafo2v p {
+            font-size: 1.5rem;
+        }
+        .parrafo3v p {
+            font-size: 1.5rem;
+        }
+        .atencion img {
+            height: 400px;
+            width: 1200px;
+        }
+        .forma {
+            font-size: 2rem;
+        }
+        .quienlogo img {
+            height: 200px;
+            width: 384px;
+        }
+        .quienlogo2 img {
+            height: 200px;
+            width: 384px;
+        }
+        .nosotros p {
+            font-size: 1.5rem;
+        }
+        .nosotros2 p {
+            font-size: 1.5rem;
+        }
+        .portada img {
+            height: 600px;
+            width: 768px;
+        }
+        .portada2 img {
+            height: 600px;
+            width: 768px;
+        }
+        .barner li {
+            height: 70px;
+            width: 80px;
+            margin: 15px;
+            padding: 3px;
+        }
+        .j_org2 {
+            margin: 20px;
+            height: 200px;
+            width: 300px;
+        }
+    }
+    
+    @media screen and (max-width:500px) {
+        .port {
+            width: 425px;
+        }
+        .port2 {
+            left: 70px;
+            top: 100px;
+        }
+        .bprt {
+            left: 160px;
+            top: 350px;
+            ul {
+                li {
+                    background-color: #9b2226;
+                    border-radius: 25px;
+                    font-size: 14px;
+                }
             }
-            .bus input {
-                height: 20px;
-                width: 200px;
+        }
+        .sp {
+            left: 200px;
+            top: 490px;
+            height: 30px;
+            width: 30px;
+        }
+        .dp {
+            display: none;
+        }
+        .bus {
+            display: none;
+        }
+        .imagen_imagen1 p {
+            display: none;
+        }
+        .navegacion {
+            background-color: #9b2226;
+            height: 100px;
+            position: relative;
+            font-size: 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            li {
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+                margin: 5px;
+                margin-right: 20px;
             }
-            .imagen_imagen1 p {
-                top: 100px;
-                left: 300px;
-                height: 200px;
-                width: 300px;
-                font-size: 1.5rem;
+        }
+        .encabezado img {
+            display: flex;
+            position: relative;
+            padding: 5px;
+            top: 0px;
+            left: 180px;
+            height: 60px;
+            width: 60px;
+        }
+        .final p {
+            font-size: 1rem;
+        }
+        .final li {
+            height: 60px;
+            width: 50px;
+        }
+        .imagen_imagen1 img {
+            height: 190px;
+            width: 425px;
+        }
+        .imagen_imagen2 img {
+            height: 385px;
+            width: 103px;
+        }
+        .imagen_Main3 img {
+            height: 190px;
+            width: 220px;
+        }
+        .imagen_Main4 img {
+            height: 190px;
+            width: 220px;
+        }
+        .imagen_Main5 img {
+            height: 190px;
+            width: 220px;
+        }
+        .imagen_Main6 img {
+            height: 190px;
+            width: 220px;
+        }
+        .atencion img {
+            height: 300px;
+            width: 900px;
+        }
+        .forma {
+            font-size: 1rem;
+        }
+        .vendido1 img {
+            height: 380px;
+            width: 425px;
+        }
+        .vendido2 img {
+            height: 380px;
+            width: 425px;
+        }
+        .vendido3 img {
+            height: 380px;
+            width: 425px;
+        }
+        .parrafo1v p {
+            font-size: 1rem;
+        }
+        .parrafo2v p {
+            font-size: 1rem;
+        }
+        .parrafo3v p {
+            font-size: 1rem;
+        }
+        .quienlogo img {
+            height: 200px;
+            width: 284px;
+        }
+        .quienlogo2 img {
+            height: 200px;
+            width: 284px;
+        }
+        .nosotros p {
+            font-size: 1.2rem;
+        }
+        .nosotros2 p {
+            font-size: 1.2rem;
+        }
+        .portada img {
+            height: 400px;
+            width: 525px;
+        }
+        .portada2 img {
+            height: 400px;
+            width: 525px;
+        }
+        .barner li {
+            height: 50px;
+            width: 60px;
+            margin: 15px;
+            padding: 3px;
+        }
+        .divp1 {
+            width: 200px;
+            height: 120px;
+            left: 110px;
+            top: 420px;
+        }
+        .divp2 {
+            width: 200px;
+            height: 120px;
+            left: 200px;
+            top: 800px;
+        }
+        .j_org2 {
+            margin: 20px;
+            height: 70px;
+            width: 200px;
+            h5 {
+                display: none;
             }
-            .imagen_imagen1 img {
-                height: 250px;
-                width: 768;
+            p {
+                display: none;
             }
-            .imagen_imagen2 img {
-                height: 505px;
-                width: 270px;
+        }
+        .final3 {
+            margin: 10px;
+            padding: 10px;
+            p {
+                font-size: 11px;
             }
-            .imagen_Main3 img {
-                height: 250px;
-                width: 285px;
+            ul {
+                font-size: 9px;
             }
-            .imagen_Main4 img {
-                height: 250px;
-                width: 285px;
-            }
-            .imagen_Main5 img {
-                height: 250px;
-                width: 285px;
-            }
-            .imagen_Main6 img {
-                height: 250px;
-                width: 285px;
-            }
-            .final p {
-                font-size: 1.5rem;
-            }
-            .final li {
-                height: 80px;
+            li {
+                height: 30px;
                 width: 70px;
             }
-            .vendido1 img {
-                height: 580px;
-                width: 768px;
-            }
-            .vendido2 img {
-                height: 580px;
-                width: 768px;
-            }
-            .vendido3 img {
-                height: 580px;
-                width: 768px;
-            }
-            .parrafo1v p {
-                font-size: 1.5rem;
-            }
-            .parrafo2v p {
-                font-size: 1.5rem;
-            }
-            .parrafo3v p {
-                font-size: 1.5rem;
-            }
-            .atencion img {
-                height: 400px;
-                width: 1200px;
-            }
-            .forma {
-                font-size: 2rem;
-            }
-            .quienlogo img {
-                height: 200px;
-                width: 384px;
-            }
-            .quienlogo2 img {
-                height: 200px;
-                width: 384px;
-            }
-            .nosotros p {
-                font-size: 1.5rem;
-            }
-            .nosotros2 p {
-                font-size: 1.5rem;
-            }
-            .portada img {
-                height: 600px;
-                width: 768px;
-            }
-            .portada2 img {
-                height: 600px;
-                width: 768px;
-            }
-            .barner li {
-                height: 70px;
-                width: 80px;
-                margin: 15px;
-                padding: 3px;
-            }
-            .j_org2 {
-                margin: 20px;
-                height: 200px;
-                width: 300px;
-            }
         }
-        
-        @media screen and (max-width:500px) {
-            .bus {
-                display: none;
-            }
-            .imagen_imagen1 p {
-                display: none;
-            }
-            .navegacion {
-                background-color: #9b2226;
-                height: 100px;
-                position: relative;
-                font-size: 1rem;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                font-weight: bold;
-                text-align: center;
-                li {
-                    display: flex;
-                    flex-direction: column;
-                    padding: 5px;
-                    margin: 5px;
-                    margin-right: 20px;
-                }
-            }
-            .encabezado img {
-                display: flex;
-                position: relative;
-                padding: 5px;
-                top: 0px;
-                left: 180px;
-                height: 60px;
-                width: 60px;
-            }
-            .final p {
-                font-size: 1rem;
-            }
-            .final li {
-                height: 60px;
-                width: 50px;
-            }
-            .imagen_imagen1 img {
-                height: 190px;
-                width: 425px;
-            }
-            .imagen_imagen2 img {
-                height: 385px;
-                width: 103px;
-            }
-            .imagen_Main3 img {
-                height: 190px;
-                width: 220px;
-            }
-            .imagen_Main4 img {
-                height: 190px;
-                width: 220px;
-            }
-            .imagen_Main5 img {
-                height: 190px;
-                width: 220px;
-            }
-            .imagen_Main6 img {
-                height: 190px;
-                width: 220px;
-            }
-            .atencion img {
-                height: 300px;
-                width: 900px;
-            }
-            .forma {
-                font-size: 1rem;
-            }
-            .vendido1 img {
-                height: 380px;
-                width: 425px;
-            }
-            .vendido2 img {
-                height: 380px;
-                width: 425px;
-            }
-            .vendido3 img {
-                height: 380px;
-                width: 425px;
-            }
-            .parrafo1v p {
-                font-size: 1rem;
-            }
-            .parrafo2v p {
-                font-size: 1rem;
-            }
-            .parrafo3v p {
-                font-size: 1rem;
-            }
-            .quienlogo img {
-                height: 200px;
-                width: 284px;
-            }
-            .quienlogo2 img {
-                height: 200px;
-                width: 284px;
-            }
-            .nosotros p {
-                font-size: 1.2rem;
-            }
-            .nosotros2 p {
-                font-size: 1.2rem;
-            }
-            .portada img {
-                height: 400px;
-                width: 525px;
-            }
-            .portada2 img {
-                height: 400px;
-                width: 525px;
-            }
-            .barner li {
-                height: 50px;
-                width: 60px;
-                margin: 15px;
-                padding: 3px;
-            }
-            .divp1 {
-                width: 200px;
-                height: 120px;
-                left: 110px;
-                top: 420px;
-            }
-            .divp2 {
-                width: 200px;
-                height: 120px;
-                left: 200px;
-                top: 800px;
-            }
-            .j_org2 {
-                margin: 20px;
-                height: 70px;
-                width: 200px;
-                h5 {
-                    display: none;
-                }
-                p {
-                    display: none;
-                }
-            }
-            .final3 {
-                margin: 10px;
-                padding: 10px;
-                p {
-                    font-size: 11px;
-                }
-                ul {
-                    font-size: 9px;
-                }
-                li {
-                    height: 30px;
-                    width: 70px;
-                }
-            }
-        }
+    }

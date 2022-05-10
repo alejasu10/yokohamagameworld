@@ -1,0 +1,63 @@
+/*Portada */
+
+.port {
+    position: relative;
+    height: auto;
+    width: auto;
+    z-index: 1;
+}
+
+.port2 {
+    display: flex;
+    position: absolute;
+    width: auto;
+    height: auto;
+    z-index: 2;
+    left: 630px;
+    top: 200px;
+}
+
+.bprt {
+    position: absolute;
+    display: flex;
+    z-index: 3;
+    left: 480px;
+    top: 400px;
+    width: auto;
+    height: auto;
+    ul {
+        background-color: black;
+        border-radius: 25px;
+        li {
+            font-size: 32px;
+            font-weight: bold;
+            font-style: italic;
+            margin: 5px;
+            padding: 5px;
+            a {
+                text-decoration: none;
+                color: white;
+                text-align: center;
+                &:hover {
+                    color: #e85d04;
+                }
+            }
+        }
+    }
+}
+
+.sp {
+    display: flex;
+    position: absolute;
+    left: 900px;
+    top: 550px;
+    height: 30px;
+    width: 30px;
+    z-index: 2;
+}
+
+.dp {
+    color: #e85d04;
+    font-size: 25px;
+    font-weight: bold;
+}
